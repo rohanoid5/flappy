@@ -21,7 +21,7 @@ impl Player {
 
     pub fn gravity_and_fall(&mut self) {
         if self.velocity < 2.0 {
-            self.velocity += 0.2;
+            self.velocity += 0.5;
         }
 
         self.y += self.velocity as i32;
